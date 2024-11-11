@@ -18,11 +18,11 @@ syn = { version = "2.0.58", features = ["full"] }
 proc-macro = true
 
 
-[package.lints.rust]
+[lints.rust]
 missing_docs = "warn"
 unreachable_pub = "warn"
 rust_2021_compatibility = { level = "warn", priority = -1 }
 
-[package.lints.clippy]
+[lints.clippy]
 pedantic = "warn"
 all = "warn"
