@@ -1,0 +1,28 @@
+[package]
+name = "e2e-proc"
+description = "End-to-end Testing Procedural Macros"
+version = "0.1.0"
+categories = ["development-tools::testing", "cryptography::cryptocurrencies"]
+keywords = ["arbitrum", "ethereum", "stylus", "integration-testing", "tests"]
+iauthors = ["OpenZeppelin"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Ifechukwudaniel/e2e-proc-stylus.git"
+
+[dependencies]
+proc-macro2 = "1.0.79"
+quote = "1.0.35"
+syn = { version = "2.0.58", features = ["full"] }
+
+[lib]
+proc-macro = true
+
+
+[package.lints.rust]
+missing_docs = "warn"
+unreachable_pub = "warn"
+rust_2021_compatibility = { level = "warn", priority = -1 }
+
+[package.lints.clippy]
+pedantic = "warn"
+all = "warn"
